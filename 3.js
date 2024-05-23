@@ -15,7 +15,9 @@ function Add5(num){
     return num+5;
 }
 
-function squareNumDoubleNumAdd5(){
-    return squarNumber(doubleNumber(Add5(5)))
+function squareNumDoubleNumAdd5(num) {
+    const squared = squarNumber(num);
+    const doubled = doubleNumber(squared);
+    return Add5(doubled);
 }
-console.log(squareNumDoubleNumAdd5())
+console.log(squareNumDoubleNumAdd5(5))
